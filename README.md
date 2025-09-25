@@ -1,18 +1,15 @@
 # Atividade- Turma 2B
 Aluno Julio Cesar Rodrigues de Arruda Matricula 01841484
-
-
 class Console :
-    marca = "..."
-    modelo = "..."
-    def definir_marca(self, nova_marca):
-        self.marca = nova_marca
-    def definir_modelo(self, novo_modelo):
-        self.modelo = novo_modelo
+    def exibir_marca(self,marca):
+        self.marca = marca
 
-meu_console = Console()
-meu_console.definir_marca("Playstation")
-meu_console.definir_modelo("PS4")
+    def exibir_modelo(self,modelo):
+        self.modelo = modelo
 
-print("Marca:", meu_console.marca)
-print("Modelo:", meu_console.modelo)
+
+meu_console = Console ()
+meu_console.marca = ("Sony")
+meu_console.modelo = ("PS4")
+ 
+print(f"O console é um {meu_console.modelo} da {meu_console.marca}.")
